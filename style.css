@@ -16,9 +16,23 @@ body {
 }
 
 .text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 2.4rem;
   color: black;
+}
+
+.third-title {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.second-title {
+  font-size: 3rem;
+  color: #4c3535;
+  font-weight: 700;
 }
 
 .line {
@@ -131,4 +145,30 @@ body {
 
 .photo__image {
   height: 50rem;
+}
+
+/* Community section */
+
+.travellers__section-community {
+  display: flex;
+  margin-top: 10rem;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.line__orange {
+  border: 0.2rem solid #ff6527;
+  width: 5%;
+  align-self: center;
+}
+
+.section-community__photo {
+  display: flex;
+  justify-content: center;
+  margin: 10rem auto;
+}
+
+.photo__community {
+  height: 35rem;
 }
