@@ -1,0 +1,54 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.travellers__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 5rem;
+}
+
+.header__logo {
+  height: 2rem;
+}
+
+.navbar__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+}
+
+.nav__element {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav__element--button {
+  font-weight: 400;
+  padding: 0.8rem 2rem;
+  background-color: #ff6527;
+  border-bottom: 0.2rem solid transparent;
+  border-radius: 0.8rem;
+}
+
+.element__link {
+  color: black;
+  text-decoration: none;
+  border-bottom: 0.2rem solid transparent;
+  padding: 1rem 1rem;
+}
+
+.element__link--button {
+  color: white;
+}
+
+.element__link:hover {
+  border-bottom: 0.2rem solid #ff6527;
+  padding: 1rem 1rem;
+}
