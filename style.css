@@ -1,16 +1,36 @@
 * {
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 62.5%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
+body {
+  margin: 2rem 5rem;
+}
+
+.title {
+  font-size: 4.5rem;
+  color: #4c3535;
+}
+
+.text {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: black;
+}
+
+.line {
+  border: 0.2rem solid #eebe68;
+  width: 10%;
+}
+/* Header */
 
 .travellers__header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 2rem 5rem;
 }
 
 .header__logo {
@@ -18,30 +38,30 @@
 }
 
 .navbar__list {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  align-items: center;
 }
 
 .nav__element {
-  font-size: 1.8rem;
   font-weight: 700;
 }
 
 .nav__element--button {
-  font-weight: 400;
-  padding: 0.8rem 2rem;
   background-color: #ff6527;
   border-bottom: 0.2rem solid transparent;
   border-radius: 0.8rem;
+  font-weight: 400;
+  padding: 0.8rem 2rem;
 }
 
 .element__link {
-  color: black;
-  text-decoration: none;
   border-bottom: 0.2rem solid transparent;
+  font-size: 1.2rem;
+  color: black;
   padding: 1rem 1rem;
+  text-decoration: none;
 }
 
 .element__link--button {
@@ -51,4 +71,64 @@
 .element__link:hover {
   border-bottom: 0.2rem solid #ff6527;
   padding: 1rem 1rem;
+}
+
+/* Main section */
+
+.travellers__main-section {
+  margin: 5rem 5rem;
+  background-image: url(/static/main-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-section__description {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.description__store-images {
+  display: flex;
+  gap: 3rem;
+}
+
+.store-images__logo {
+  height: 6.5rem;
+  box-shadow: 9px 5px 20px -6px rgba(0, 0, 0, 0.32);
+  border-radius: 1rem;
+}
+
+.main-section__arrow {
+  position: absolute;
+  width: 10%;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  bottom: 45rem;
+}
+
+.arrow__image {
+  height: 7rem;
+  width: 30%;
+  box-shadow: 9px 5px 20px -6px rgba(0, 0, 0, 0.32);
+  padding: 2.5rem 1rem;
+  border-radius: 3rem;
+  background-color: white;
+}
+
+.main-section__photo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.photo__image {
+  height: 50rem;
 }
