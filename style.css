@@ -11,27 +11,32 @@ body {
 }
 
 .title {
-  font-size: 4.5rem;
   color: #4c3535;
+  font-size: 4.5rem;
 }
 
 .text {
+  color: black;
   font-size: 1.4rem;
   line-height: 2.4rem;
-  color: black;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .third-title {
-  font-size: 1.2rem;
   color: #bbbbbb;
+  font-size: 1.2rem;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 .second-title {
-  font-size: 3rem;
   color: #4c3535;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -72,8 +77,8 @@ body {
 
 .element__link {
   border-bottom: 0.2rem solid transparent;
-  font-size: 1.2rem;
   color: black;
+  font-size: 1.2rem;
   padding: 1rem 1rem;
   text-decoration: none;
 }
@@ -90,22 +95,22 @@ body {
 /* Main section */
 
 .travellers__main-section {
-  margin: 5rem 5rem;
+  align-items: center;
   background-image: url(/static/main-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  margin: 5rem 5rem;
 }
 
 .main-section__description {
-  width: 35%;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 2rem;
+  width: 35%;
 }
 
 .description__store-images {
@@ -114,33 +119,33 @@ body {
 }
 
 .store-images__logo {
-  height: 6.5rem;
-  box-shadow: 9px 5px 20px -6px rgba(0, 0, 0, 0.32);
   border-radius: 1rem;
+  box-shadow: 9px 5px 20px -6px rgba(0, 0, 0, 0.32);
+  height: 6.5rem;
 }
 
 .main-section__arrow {
+  align-self: flex-end;
+  bottom: 45rem;
+  display: flex;
+  justify-content: center;
   position: absolute;
   width: 10%;
-  display: flex;
-  align-self: flex-end;
-  justify-content: center;
-  bottom: 45rem;
 }
 
 .arrow__image {
-  height: 7rem;
-  width: 30%;
-  box-shadow: 9px 5px 20px -6px rgba(0, 0, 0, 0.32);
-  padding: 2.5rem 1rem;
-  border-radius: 3rem;
   background-color: white;
+  border-radius: 3rem;
+  box-shadow: 9px 5px 20px -6px rgba(0, 0, 0, 0.32);
+  height: 7rem;
+  padding: 2.5rem 1rem;
+  width: 30%;
 }
 
 .main-section__photo {
-  width: 50%;
   display: flex;
   justify-content: center;
+  width: 50%;
 }
 
 .photo__image {
@@ -151,16 +156,16 @@ body {
 
 .travellers__section-community {
   display: flex;
-  margin-top: 10rem;
   flex-direction: column;
-  text-align: center;
   gap: 2rem;
+  margin-top: 10rem;
+  text-align: center;
 }
 
 .line__orange {
+  align-self: center;
   border: 0.2rem solid #ff6527;
   width: 5%;
-  align-self: center;
 }
 
 .section-community__photo {
@@ -171,4 +176,50 @@ body {
 
 .photo__community {
   height: 35rem;
+}
+
+/* Memories section */
+
+.travellers__section-memories {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin: 5rem auto;
+  background-image: url(/static/memories-background.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section-memories__description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-start;
+  padding-right: 10rem;
+  width: 40%;
+}
+
+.description__bullet {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.bullet__icon {
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 9px 5px 20px -6px rgba(0, 0, 0, 0.32);
+  height: 5rem;
+  padding: 1rem;
+}
+
+.section-memories__image {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.image__photographer {
+  height: 50rem;
 }
