@@ -403,6 +403,12 @@ input:checked + .slider:before {
   font-size: 1rem;
   text-align: left;
   padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-arrow-right {
+  font-size: 1rem;
 }
 
 .card__button:hover {
@@ -496,15 +502,32 @@ input:checked + .slider:before {
   width: 12rem;
 }
 
+.suscribe__submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .suscribe__input {
   height: 5rem;
   border-style: solid;
   color: #bbbbbb;
   border-color: #bbbbbb;
   border-width: 0.05rem;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
   padding: 1rem;
   font-size: 1.2rem;
+  width: 80%;
+}
+
+.submit__button {
+  background-color: #ff6527;
+  color: white;
+  border: 0 solid transparent;
+  border-radius: 0 0.5rem 0.5rem 0;
+  height: 5rem;
+  width: 20%;
+  padding: 1rem;
 }
 
 .footer__down-bar {
