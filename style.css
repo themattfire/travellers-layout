@@ -405,3 +405,54 @@ input:checked + .slider:before {
   background-color: #ff6527;
   color: white;
 }
+
+/* Download section */
+
+.travellers__section-download {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 10rem auto;
+}
+
+.section-download__description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: url(/static/download-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3rem;
+  padding: 5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.text--white {
+  color: white;
+}
+
+.second-title--white {
+  color: white;
+}
+
+.description__store-logos {
+  display: flex;
+  gap: 2rem;
+}
+
+.description__flotant {
+  align-self: flex-end;
+  bottom: 7rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 10%;
+}
+
+.flotant__image {
+  height: 7rem;
+}
+
+/* Footer */
